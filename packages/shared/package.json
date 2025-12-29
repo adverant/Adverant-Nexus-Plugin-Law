@@ -1,0 +1,22 @@
+{
+  "name": "@nexus-law/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities and Nexus Stack integration clients",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@nexus-law/types": "*",
+    "axios": "^1.6.7",
+    "axios-retry": "^4.0.0",
+    "socket.io-client": "^4.7.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "name": "nexus-law",
+  "displayName": "NexusLaw - Legal AI Assistant & Document Analysis",
+  "version": "1.0.0",
+  "description": "AI-powered legal assistant with intelligent contract review, legal research, compliance checking, and document analysis. Transform legal work with multi-agent AI.",
+  "developer": {
+    "name": "Adverant",
+    "url": "https://adverant.ai",
+    "email": "plugins@adverant.ai",
+    "verified": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adverant/Adverant-Nexus-Plugin-Law"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "legal-tech",
+    "contract-review",
+    "legal-research",
+    "compliance",
+    "document-analysis",
+    "citation-network",
+    "ai-agents",
+    "law"
+  ],
+  "nexus": {
+    "minVersion": "1.0.0",
+    "executionMode": "mcp_container",
+    "isolationLevel": 2,
+    "capabilities": [
+      "contract-review",
+      "legal-research",
+      "compliance-checking",
+      "document-analysis",
+      "citation-networks",
+      "ocr-processing"
+    ],
+    "permissions": [
+      "network:external",
+      "filesystem:temp",
+      "service:mageagent",
+      "service:graphrag",
+      "service:fileprocess"
+    ],
+    "entrypoint": "dist/index.js",
+    "healthCheck": "/health",
+    "readinessCheck": "/ready",
+    "livenessCheck": "/live"
+  },
+  "resources": {
+    "cpuMillicores": 2000,
+    "memoryMB": 4096,
+    "diskGB": 10,
+    "timeoutMs": 600000,
+    "maxConcurrentJobs": 5
+  },
+  "api": {
+    "version": "v1",
+    "basePath": "/api/v1/law",
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "/documents/analyze",
+        "description": "Analyze a legal document"
+      },
+      {
+        "method": "GET",
+        "path": "/documents/:id",
+        "description": "Get document analysis results"
+      },
+      {
+        "method": "POST",
+        "path": "/research/query",
+        "description": "Execute legal research query"
+      },
+      {
+        "method": "GET",
+        "path": "/citations/:caseId",
+        "description": "Get citation network for a case"
+      },
+      {
+        "method": "POST",
+        "path": "/compliance/check",
+        "description": "Run compliance check"
+      },
+      {
+        "method": "GET",
+        "path": "/compliance/gaps",
+        "description": "List compliance gaps"
+      }
+    ]
+  },
+  "pricing": {
+    "model": "tiered",
+    "currency": "USD",
+    "tiers": [
+      {
+        "name": "starter",
+        "displayName": "Starter",
+        "priceMonthly": 9900,
+        "priceYearly": 99000,
+        "limits": {
+          "seats": 3,
+          "documentsPerMonth": 100
+        },
+        "features": ["basic-contract-review", "limited-research", "document-storage"]
+      },
+      {
+        "name": "professional",
+        "displayName": "Professional",
+        "priceMonthly": 39900,
+        "priceYearly": 399000,
+        "limits": {
+          "seats": 15,
+          "documentsPerMonth": 1000
+        },
+        "features": ["advanced-contract-review", "full-research", "citation-networks", "basic-compliance"],
+        "popular": true
+      },
+      {
+        "name": "enterprise",
+        "displayName": "Enterprise",
+        "priceMonthly": -1,
+        "priceYearly": -1,
+        "limits": {
+          "seats": -1,
+          "documentsPerMonth": -1
+        },
+        "features": ["custom-models", "premium-sources", "advanced-compliance", "dedicated-support", "sla"]
+      }
+    ]
+  },
+  "marketplace": {
+    "category": "legal",
+    "subcategory": "document-analysis",
+    "featured": true,
+    "tags": ["legal", "contracts", "compliance", "research", "ai", "document-analysis"]
+  }
+}

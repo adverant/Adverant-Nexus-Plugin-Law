@@ -1,0 +1,22 @@
+{
+  "name": "@nexus-law/adapters",
+  "version": "1.0.0",
+  "description": "Legal database adapter framework and implementations",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@nexus-law/types": "*",
+    "axios": "^1.6.7",
+    "axios-retry": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  }
+}

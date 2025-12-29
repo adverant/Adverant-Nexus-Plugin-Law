@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nexus-law/types": ["../../packages/types/dist/index"],
+      "@nexus-law/types/*": ["../../packages/types/dist/*"],
+      "@nexus-law/shared": ["../../packages/shared/dist/index"],
+      "@nexus-law/shared/*": ["../../packages/shared/dist/*"],
+      "@nexus-law/adapters": ["../../packages/adapters/dist/index"],
+      "@nexus-law/adapters/*": ["../../packages/adapters/dist/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

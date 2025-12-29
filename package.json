@@ -1,0 +1,51 @@
+{
+  "name": "@nexus-law/monorepo",
+  "version": "1.0.0",
+  "description": "Nexus Law - AI-First Legal Intelligence Platform",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "cd packages/types && npm run build && cd ../shared && npm run build && cd ../adapters && npm run build && cd ../../services/api-gateway && npm run build",
+    "test": "turbo run test",
+    "test:integration": "jest --config jest.integration.config.js",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "db:migrate": "node scripts/migrate.js",
+    "db:seed": "node scripts/seed.js",
+    "docker:build": "docker-compose -f docker/docker-compose.nexus-law.yml build",
+    "docker:up": "docker-compose -f docker/docker-compose.nexus-law.yml up -d",
+    "docker:down": "docker-compose -f docker/docker-compose.nexus-law.yml down",
+    "docker:logs": "docker-compose -f docker/docker-compose.nexus-law.yml logs -f"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "legal-tech",
+    "ai",
+    "legal-research",
+    "document-intelligence",
+    "practice-management"
+  ],
+  "author": "Adverant AI",
+  "license": "MIT"
+}
