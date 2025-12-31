@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="assets/icon.png" alt="NexusLaw Logo" width="120" height="120">
-</p>
 
 <h1 align="center">NexusLaw</h1>
 
