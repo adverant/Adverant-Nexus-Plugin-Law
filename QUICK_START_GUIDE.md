@@ -2,11 +2,11 @@
 
 ## What is Nexus Law?
 
-**Nexus Law** is the world's first fully dynamic, AI-first legal intelligence platform that combines:
+**Nexus Law** is a fully dynamic, AI-first legal intelligence platform that combines:
 
 - ✅ **Zero Hardcoded Logic** - Everything configurable via YAML/JSON
-- ✅ **Universal Database Integration** - Connect to LexisNexis, Westlaw, CourtListener, and 50+ global repositories
-- ✅ **Massive Document Processing** - 1200+ documents/hour with 97.9% accuracy
+- ✅ **Universal Database Integration** - Connect to LexisNexis, Westlaw, CourtListener, and other repositories
+- ✅ **High-Throughput Document Processing** - Fast batch processing with quality controls
 - ✅ **195+ Jurisdictions** - Global support with automatic legal system adaptation
 - ✅ **AI-First Design** - Multi-agent orchestration for complex legal tasks
 
@@ -404,8 +404,8 @@ POST /api/research/multi-agent
 - **Configuration Reference**: [Coming Soon]
 
 ### Community
-- **GitHub**: [Repository Link]
-- **Discord**: [Community Link]
+- **GitHub**: [github.com/adverant/Adverant-Nexus-Plugin-Law](https://github.com/adverant/Adverant-Nexus-Plugin-Law)
+- **Discord**: [discord.gg/adverant](https://discord.gg/adverant)
 - **Email**: nexus-law-support@adverant.ai
 
 ### Legal Database Partnerships

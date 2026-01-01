@@ -108,9 +108,9 @@ flowchart TD
 
 ### Business Impact
 
-- **80% reduction** in contract review time
-- **96% issue detection rate** (vs 72% manual)
-- **$500K annual savings** for mid-size legal team
+- **Faster contract review** compared to manual process
+- **Consistent issue detection** across all documents
+- **Time savings** for legal teams
 
 ---
 
@@ -185,7 +185,7 @@ class LegalResearchService:
 
 ### Business Impact
 
-- **87% reduction** in research time
+- **Reduced research time** compared to manual methods
 - **Comprehensive coverage** across jurisdictions
 - **Consistent quality** regardless of attorney experience
 
@@ -302,7 +302,7 @@ flowchart LR
 
 ### Business Impact
 
-- **85% faster** compliance audits
+- **Faster compliance audits** compared to manual process
 - **Continuous monitoring** of regulatory changes
 - **Reduced compliance risk** through comprehensive coverage
 
@@ -389,7 +389,7 @@ class DueDiligenceService {
 
 ### Business Impact
 
-- **70% faster** due diligence
+- **Faster due diligence** through automated document analysis
 - **Comprehensive issue detection** across all documents
 - **Consistent quality** under tight deadlines
 
@@ -484,7 +484,7 @@ class ClauseLibraryService:
 ### Business Impact
 
 - **Standardized language** across all contracts
-- **50% faster** contract drafting
+- **Faster contract drafting** with reusable clauses
 - **Institutional knowledge** preserved and searchable
 
 ---
